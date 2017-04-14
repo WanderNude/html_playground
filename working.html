@@ -2,8 +2,29 @@
 <html>
 <head>
 <style>
-h1 {
+* {
+	/*border: 1px dashed red;*/
+}
+.main h1 {
 	text-align: center;
+}
+
+.banner {
+	background: url(https://cdn.shopify.com/s/files/1/0332/2021/products/randomTDF-06.png?v=1437457415) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+	text-align: center;
+    color: Green;
+    font-size: 20px;
+}
+
+.navbar{
+	background: linear-gradient(#99ffff,#00b3b3);
 }
 
 ul {
@@ -11,7 +32,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(#99ffff,#00cccc);
+    /*background: linear-gradient(#99ffff,#00cccc);*/
 }
 
 li {
@@ -25,9 +46,8 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 li a:hover {
-    background: linear-gradient(#1affff,#006666);
+    background: linear-gradient(#1affff,#009999);
     border: 1px black;
 }
 
@@ -35,20 +55,43 @@ li a:hover {
 	float: right;
 }
 
+@media screen and (max-width: 450px){
+    .navbar li {
+    	/*float: none;
+    	text-align: center;*/
+        display: none;
+    }
+    
+    li a {
+    	padding: .25em;
+	}
+    
+    .banner {
+    	height: 150px;
+    }
+}
+
 </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
+
 <body>
-<div class="banner">
-	<h1>Banner Text</h1>
-</div>
-<div class=navbar>
-  <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
-    <li class="right"><a href="#Stuff">Stuff</a></li>
-  </ul>
+<div class="container">
+  <div class="banner">
+    <div class="main">
+      <h1>Banner Text</h1>
+    </div>
+  </div>
+  <div class=navbar>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="right"><a href="#Stuff">Stuff</a></li>
+    </ul>
+  </div>
 </div>
 
 </body>

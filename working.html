@@ -5,12 +5,27 @@
 * {
 	/*border: 1px dashed red;*/
 }
+
+body {
+	padding: 0px;
+    margin: 0px;
+    background-color: dimgrey;
+    color: white;
+    font-family: arial, sans-serif;
+}
+
 .main h1 {
 	text-align: center;
+    margin: 0px;
+}
+
+.container{
+	padding: 0px;
+    margin: 0px;
 }
 
 .banner {
-	background: url(https://cdn.shopify.com/s/files/1/0332/2021/products/randomTDF-06.png?v=1437457415) no-repeat center center;
+	background: url(https://img0.etsystatic.com/054/0/5808143/il_570xN.766487330_o7h5.jpg) no-repeat center center;
     background-size: cover;
     height: 300px;
     margin: 0px;
@@ -19,18 +34,24 @@
 
 .main {
 	text-align: center;
-    color: Green;
+    color: white;
     font-size: 20px;
 }
 
 .navbar{
 	background: linear-gradient(#99ffff,#00b3b3);
+    position: fixed;
+    width: 100%;
+}
+
+.content {
+	padding: 1.5em;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
     /*background: linear-gradient(#99ffff,#00cccc);*/
 }
@@ -45,14 +66,25 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border: 1px solid transparent;
 }
 li a:hover {
     background: linear-gradient(#1affff,#009999);
-    border: 1px black;
+    border: 1px solid black;
 }
 
 .right {
 	float: right;
+}
+
+.center {
+	float: center;
+    text-align: center;
+}
+
+.left {
+	float: left;
+    text-align: left;
 }
 
 @media screen and (max-width: 450px){
@@ -78,19 +110,24 @@ li a:hover {
 
 <body>
 <div class="container">
+  <div class=navbar>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li class="right"><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
   <div class="banner">
     <div class="main">
       <h1>Banner Text</h1>
     </div>
   </div>
-  <div class=navbar>
-    <ul>
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">About</a></li>
-      <li class="right"><a href="#Stuff">Stuff</a></li>
-    </ul>
+  <div class="content">
+  	<h2>SHOTGUN BARRELS: 1000+ NEW & USED SHOTGUN BARRELS FOR SALE</h2>
+    <p class="left">Do you have any shotgun barrels for sale? Do you know any one who has any shotgun barrels for sale? I am buying shotgun barrels for resale. One barrel or 100 barrels, please send copy of shotgun barrel inventory, you want to sell with prices.</p>
+    <p class="left">    I owned a full service Gun Shop (Corson's Gun Nook) in Lake Charles, Louisiana ( The Sportsmen's Paradise) from 1958 until 1984. I did both gun repair and sales. I attended several Remington Gun Repair courses in Baton Rouge, Louisiana and Houston, Texas. Most of my sales and repairs were for shotguns. Duck and goose hunting was the choice of most hunters in southwest Louisiana. I have closed my shop in Louisiana and moved to Arizona.</p>
   </div>
 </div>
 

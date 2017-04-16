@@ -44,6 +44,13 @@ body {
     width: 100%;
 }
 
+.dropcontent{
+	position: absolute;
+    display: none;
+    background-color: #99ffff;
+    
+}
+
 .content {
 	padding: 1.5em;
 }
@@ -60,8 +67,8 @@ li {
     float: left;
 }
 
-li a {
-    display: block;
+li a, .dropbtn {
+    display: inline-block;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -69,10 +76,18 @@ li a {
     /*border: 1px solid transparent;*/
 }
 
-li a:hover {
+li.dropdown {
+	display: inline-block;
+}
+
+li a:hover, .dropdown:hover dropbtn {
     /*background: linear-gradient(#99ffff,#00cccc);
     /*border: 1px solid black;*/
     background: #00e6e6;
+}
+
+.dropcontent a {
+	display: block;
 }
 
 .right {
@@ -87,6 +102,10 @@ li a:hover {
 .left {
 	float: left;
     text-align: left;
+}
+
+.dropdown:hover .dropcontent {
+	display: block;
 }
 
 @media screen and (max-width: 450px){
@@ -117,7 +136,14 @@ li a:hover {
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#shop">Shop</a></li>
+      <li class="dropdown">
+      	<a href="#shop" class="dropbtn">Shop</a>
+      	<div class="dropcontent">
+        	<a href="#remington">Remington</a>
+            <a href="#mossberg">Mossberg</a>
+            <a href="#beretta">Beretta</a>
+        </div>      
+      </li>
       <li class="right"><a href="#contact">Contact</a></li>
     </ul>
   </div>

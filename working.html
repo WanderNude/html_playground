@@ -9,8 +9,7 @@
 body {
 	padding: 0px;
     margin: 0px;
-    background-color: dimgrey;
-    color: white;
+    background-color: ghostwhite;
     font-family: arial, sans-serif;
 }
 
@@ -60,7 +59,6 @@ ul {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    /*background: linear-gradient(#99ffff,#00cccc);*/
 }
 
 li {
@@ -119,10 +117,18 @@ li a:hover, .dropdown:hover dropbtn {
     text-decoration: none;
 }
 
+.button:hover {
+	background-color: #ff3333;
+}
+
+.foot {
+	font-size: .75em;
+	padding: .5em 1.5em;
+}
+
+
 @media screen and (max-width: 450px){
     .navbar li {
-    	/*float: none;
-    	text-align: center;*/
         display: none;
     }
     
@@ -176,6 +182,13 @@ li a:hover, .dropdown:hover dropbtn {
     <p><a href="https://home.nra.org/"><button class="button">Support the NRA</button></a></p>
   </div>
 </div>
-
 </body>
+
+<footer class="foot">
+	<ul>
+    	<li>Corson's Gun Barrels</li>
+        <li>2124 Pawnee Dr, Kingman, AZ 86401</li>
+        <li>(928) 718-4282</li>
+    </ul>
+</footer>
 </html>

@@ -71,9 +71,9 @@ li a, .dropbtn {
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: .5em 1em;
     text-decoration: none;
-    /*border: 1px solid transparent;*/
+    border: 1px solid transparent;
 }
 
 li.dropdown {
@@ -81,13 +81,14 @@ li.dropdown {
 }
 
 li a:hover, .dropdown:hover dropbtn {
-    /*background: linear-gradient(#99ffff,#00cccc);
-    /*border: 1px solid black;*/
+    /*background: linear-gradient(#99ffff,#00cccc);*/
+    border: 1px solid red;
     background: #00e6e6;
 }
 
 .dropcontent a {
 	display: block;
+    text-align: left;
 }
 
 .right {
@@ -106,6 +107,16 @@ li a:hover, .dropdown:hover dropbtn {
 
 .dropdown:hover .dropcontent {
 	display: block;
+}
+
+.button{
+	color: black;
+    background-color: red;
+    font-weight: bold;
+    border: none;
+    padding: .5em 1em;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 450px){
@@ -131,7 +142,7 @@ li a:hover, .dropdown:hover dropbtn {
 
 <body>
 <div class="container">
-  <div class=navbar>
+  <div class="navbar">
     <ul>
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="#news">News</a></li>
@@ -142,6 +153,10 @@ li a:hover, .dropdown:hover dropbtn {
         	<a href="#remington">Remington</a>
             <a href="#mossberg">Mossberg</a>
             <a href="#beretta">Beretta</a>
+            <a href="#ithaca">Ithaca</a>
+            <a href="#browning">Browning</a>
+            <a href="#winchester">Winchester</a>
+            <a href="#smithWesson">Smith & Wesson</a>
         </div>      
       </li>
       <li class="right"><a href="#contact">Contact</a></li>
@@ -155,7 +170,10 @@ li a:hover, .dropdown:hover dropbtn {
   <div class="content">
   	<h2>SHOTGUN BARRELS: 1000+ NEW & USED SHOTGUN BARRELS FOR SALE</h2>
     <p class="left">Do you have any shotgun barrels for sale? Do you know any one who has any shotgun barrels for sale? I am buying shotgun barrels for resale. One barrel or 100 barrels, please send copy of shotgun barrel inventory, you want to sell with prices.</p>
-    <p class="left">    I owned a full service Gun Shop (Corson's Gun Nook) in Lake Charles, Louisiana ( The Sportsmen's Paradise) from 1958 until 1984. I did both gun repair and sales. I attended several Remington Gun Repair courses in Baton Rouge, Louisiana and Houston, Texas. Most of my sales and repairs were for shotguns. Duck and goose hunting was the choice of most hunters in southwest Louisiana. I have closed my shop in Louisiana and moved to Arizona.</p>
+    <p class="left">I owned Corson's Gun Nook - a full service Gun Shop in Lake Charles, Louisiana from 1958 until 1984. I did both gun repair and sales. I attended several Remington Gun Repair courses in Baton Rouge, Louisiana and Houston, Texas. Most of my sales and repairs were for shotguns. Duck and goose hunting was the choice of most hunters in southwest Louisiana. I have closed my shop in Louisiana and moved to Arizona.</p>
+    <p>I no longer do gun repair. I have a large supply of obsolete shotgun parts, and over 1800 shotgun barrels in stock for most pump shotguns, most automatic shotguns, and I have a few barrels for double barrels and over and under shotguns. I traveled the United States doing Gun Shows most of the late 80s and 90s. I no longer set up at Gun Shows and do not have a store front. I now sell mail order only. I have specialized in shotgun barrels from the early 90s until now.</p>
+    <p>Don Corson - Lifetime Member of the National Rifle Association since 1936</p>
+    <p><a href="https://home.nra.org/"><button class="button">Support the NRA</button></a></p>
   </div>
 </div>
 
